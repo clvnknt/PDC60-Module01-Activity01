@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module01_Activity01.Page1">
+    <!-- Page-Level Resource Dictionary: Styles defined here apply only to elements within this ContentPage -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Style for buttons with a green background -->
+            <Style x:Key="SubmitButton" TargetType="Button">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BackgroundColor" Value="#4CAF50"/>
+                <!-- Green -->
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+
+            <!-- Style for labels with the same styling as buttons -->
+            <Style x:Key="SubmitLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <!-- Green -->
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+
+            <!-- Style for frames to create rounded appearance -->
+            <Style x:Key="RoundedFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#4CAF50"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Padding" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Frame Style="{StaticResource RoundedFrame}" Margin="0,0,0,10">
+                <Label Text="This is Page 1" Style="{StaticResource SubmitLabel}" />
+            </Frame>
+            <Button Text="SUBMIT 1" Style="{StaticResource SubmitButton}" Margin="0,0,0,10" />
+            <Button Text="SUBMIT 2" Style="{StaticResource SubmitButton}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

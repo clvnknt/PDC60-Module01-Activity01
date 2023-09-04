@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module01_Activity01.Page2">
+    <!-- Layout and View-Specific Resource Dictionary: Resources defined here apply only to elements within this ContentPage's layout -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Styles for buttons -->
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                <Setter Property="TextColor" Value="Navy" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="WidthRequest" Value="180" />
+                <Setter Property="HeightRequest" Value="60" />
+            </Style>
+            <!-- Styles for labels -->
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="LightSalmon"/>
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0,20"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <!-- Label with Layout-Specific Style -->
+            <Label Text="This is Page 2!" Style="{StaticResource LabelStyle}" />
+            <!-- Buttons with Layout-Specific Style -->
+            <Button Text="Button 1" Style="{StaticResource ButtonStyle}" />
+            <Button Text="Button 2" Style="{StaticResource ButtonStyle}" />
+            <Button Text="Button 3" Style="{StaticResource ButtonStyle}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

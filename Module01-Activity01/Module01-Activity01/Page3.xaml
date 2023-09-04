@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module01_Activity01.Page3"
+             BackgroundColor="{StaticResource PageBackgroundColor}">
+    <!-- Include your resource dictionary -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="MyTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!-- Center-align the content -->
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <!-- Label with Style from MyTheme -->
+            <Label Text="Welcome to Page 3! I am Referencing this from MyTheme.xaml"
+                Style="{StaticResource LabelStyle}" />
+
+            <!-- Buttons with Style from MyTheme -->
+            <Button Text="Button 1" Style="{StaticResource ButtonStyle}" Margin="0,10,0,0" />
+            <Button Text="Button 2" Style="{StaticResource ButtonStyle}" Margin="0,10,0,0" />
+            <Button Text="Button 3" Style="{StaticResource ButtonStyle}" Margin="0,10,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

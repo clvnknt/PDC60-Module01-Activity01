@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Module01_Activity01.MyTheme">
+
+    <!-- Colors -->
+    <Color x:Key="PageBackgroundColor">#121212</Color>
+    <!-- Dark background color -->
+    <Color x:Key="NavigationBarColor">#008080</Color>
+    <!-- Teal -->
+    <Color x:Key="PrimaryColor">#FF1493</Color>
+    <!-- DeepPink -->
+    <Color x:Key="SecondaryColor">#008080</Color>
+    <!-- White -->
+    <Color x:Key="PrimaryTextColor">#FFFFFF</Color>
+    <!-- White text on dark background -->
+    <Color x:Key="SecondaryTextColor">#008080</Color>
+    <!-- Black text on light background -->
+    <Color x:Key="TertiaryTextColor">#F5F5F5</Color>
+    <!-- WhiteSmoke -->
+    <Color x:Key="TransparentColor">#00000000</Color>
+    <!-- Transparent -->
+    <Color x:Key="SharedBackgroundColor">#121212</Color>
+    <!-- Shared background color -->
+    <Color x:Key="TextColor">#FFFFFF</Color>
+
+
+    <!-- Label Style -->
+    <Style x:Key="LabelStyle" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <!-- Add any other label styles here -->
+    </Style>
+
+    <!-- Button Style -->
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="BackgroundColor" Value="Teal" />
+        <Setter Property="TextColor" Value="#FFFFFF" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="WidthRequest" Value="120" />
+        <!-- Adjust the width -->
+        <Setter Property="HeightRequest" Value="40" />
+        <!-- Adjust the height -->
+    </Style>
+
+</ResourceDictionary>
